@@ -43,11 +43,11 @@ section#skills {
 }
 
 section#projects {
-  background: #d2d2d2;
+  background: #e2e2e2;
 }
 
 section#contact {
-  background: #c2c2c2;
+  background: #e2e2e2;
 }
 
 footer {
@@ -68,7 +68,7 @@ footer {
 }
 
 section#experience {
-  background: #c2c2c2;
+  background: #e2e2e2;
 }
 
 
@@ -77,4 +77,8 @@ section#experience {
   height: 200px; /* Adjust the height as needed to make it square */
   border-radius: 50%;
   object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+section#education {
+  background: #e2e2e2;
 }
