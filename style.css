@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(247, 211, 170);
+  
 }
 
 header {
@@ -71,12 +72,37 @@ section#experience {
 }
 
 .round-image {
-  width: 200px; /* Adjust the width as needed */
-  height: 200px; /* Adjust the height as needed to make it square */
+  width: 200px; 
+  height: 200px; 
   border-radius: 50%;
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  object-fit: cover; /
 }
 
 section#education {
   background: #e2e2e2;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.icon-container a {
+  color: #555;
+  font-size: 30px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-container a:hover {
+  color: #007bff;
+  transform: scale(1.2);
 }
