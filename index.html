@@ -1,25 +1,98 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <title>My Website</title>
+    <style>
+      body {
+        margin: 0px;
+        background-color: lightcyan;
+      }
+      .header-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 25px;
+        border: solid;
+        border-radius: 15px;
+        background-color: lightskyblue;
+      }
+
+      .profile-picture {
+        width: 200px;
+        object-fit: cover;
+        border-radius: 100px;
+        border-style: solid;
+        border-width: 2px;
+      }
+
+      li {
+        display: inline;
+        margin-right: 30px;
+      }
+
+      .section-div {
+        margin-top: 200px;
+        margin-bottom: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-betweem;
+        height: 405px;
+        font-family: arial;
+      }
+
+      .nav-about-section {
+        display: flex;
+        flex-direction: row;
+      }
+      .personal-attributes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 200px;
+      }
+      .education-section,
+      .skills-section,
+      .experience-section,
+      .project-section {
+        border: solid;
+        background-color: lightskyblue;
+        border-width: 3px;
+        margin-right: 8px;
+        border-radius: 15px;
+        font-size: 20px;
+      }
+      .contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+        border-width: 3px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+        background-color: burlywood;
+        font-size: 20px;
+        height: 110px;
+      }
+
+      h2 {
+        color: brown;
+      }
+
+      .education-section {
+        margin-bottom: 200px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Sibonelo Shezi's Portfolio</h1>
-      <figure>
-        <img
-          src="https://images12345.b-cdn.net/Sibonelo.jpg"
-          alt="Profile Picture"
-          class="round-image"
-        />
-      </figure>
+      <img
+        src="https://images12345.b-cdn.net/Sibonelo.jpg"
+        alt="Profile Picture"
+        class="round-image"
+      />
       <nav>
         <ul>
           <li><a href="#about">About Me</a></li>
@@ -138,11 +211,11 @@
           ><i class="fab fa-github"></i></a
         >.
       </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 Sibonelo Shezi. All rights reserved.</p>
+    </div>
+    <footer style="margin-left: 550px">
+      <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
     </footer>
     <script src="contact.js"></script>
   </body>
 </html>
+
