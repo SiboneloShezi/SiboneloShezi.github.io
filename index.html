@@ -15,15 +15,14 @@
         font-size: 25px;
         border: solid;
         border-radius: 15px;
-        background-color: lightskyblue;
+        background-color: grey;
       }
 
-      .profile-picture {
-        width: 200px;
-        object-fit: cover;
-        border-radius: 100px;
-        border-style: solid;
-        border-width: 2px;
+      .my-portfolio {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: rgb(92, 60, 60);
       }
 
       li {
@@ -87,23 +86,29 @@
   </head>
   <body>
     <div class="header-section">
-      <div>
-        <img class="profile-picture" src="Sibonelo.jpg" />
+      <div class="my-portfolio">
+        <p>My portfolio</p>
       </div>
-      <div class="nav-about-section">
-        <nav>
-          <ul>
-            <li class="about"><a href="#about">About Me</a></li>
 
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div class="js-navElements">Welcome to my portfolio</div>
+
+      <button
+        style="padding: 1px; border-radius: 50px; cursor: pointer"
+        onclick="
+      showNavElements()"
+      >
+        <img
+          style="width: 70px; border-radius: 35px"
+          src="ThreeLinesIcon.png"
+        />
+      </button>
     </div>
+
+    <p>
+      View my CV<button style="padding: 2px">
+        <img style="width: 50px" src="viewIcon.png" />
+      </button>
+    </p>
 
     <div class="section-div">
       <div style="border: solid; margin-right: 3px; border-radius: 15px">
@@ -257,4 +262,37 @@
       <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
     </footer>
   </body>
+
+  <script>
+    function showNavElements() {
+      navSection = `
+        <div class ="nav-about-section">
+          <nav>
+            <ul>
+              <li class="about">
+                <a href="#about">About Me</a>
+              </li>
+
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#education">Education</a>
+              </li>
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      `;
+      document.querySelector(".js-navElements").innerHTML = navSection;
+    }
+  </script>
 </html>
