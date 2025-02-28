@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Website</title>
+
+    <style>
+      .header-section {
+        position: fixed; /* Makes the header stay at the top */
+        top: 0; /* Positions it at the top */
+        left: 0;
+        width: 100%; /* Ensures full width */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 25px;
+        border: solid;
+        border-radius: 15px;
+        background-color: grey;
+        height: 75px;
+      }
+
+      .contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+        border-width: 3px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+        background-color: burlywood;
+        font-size: 20px;
+        height: 110px;
+
+        margin-top: 200px;
+      }
+
+      li {
+        display: inline;
+        margin-right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-section">
+      <div class="my-portfolio">
+        <p>My portfolio</p>
+      </div>
+
+      <div class="js-navElements">Welcome to my portfolio</div>
+
+      <button
+        style="padding: 1px; border-radius: 50px; cursor: pointer"
+        onclick="
+      showNavElements()"
+      >
+        <img
+          style="width: 70px; border-radius: 35px"
+          src="ThreeLinesIcon.png"
+        />
+      </button>
+    </div>
+
+    <div class="personal-attributes"></div>
+
+    <div class="contact-section">
+      <div>
+        <section id="contact">
+          <h2>Contact</h2>
+        </section>
+      </div>
+      <div>
+        <p>
+          Connect with me on
+          <a
+            href="https://linkedin.com/in/sibonelo-shezi-6039801ba"
+            target="_blank"
+            >LinkedIn</a
+          >
+          or send me an email at
+          <a href="mailto: wizardshezi@gmail.com">wizardshezi@gmail.com</a>.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <a href="Sibonelo shezi2 updated tech2025.pdf" target="_blank">
+        <img src="thumbnails/viewIcon.png" />
+      </a>
+    </div>
+
+    <p style="display: inline-block; margin-left: 10px">View my Cv</p>
+
+    <footer style="margin-left: 550px">
+      <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<head>
+  <title>Skills</title>
+  <style>
+    .header-section {
+      position: fixed; /* Makes the header stay at the top */
+      top: 0; /* Positions it at the top */
+      left: 0;
+      width: 100%; /* Ensures full width */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 25px;
+      border: solid;
+      border-radius: 15px;
+      background-color: grey;
+      height: 75px;
+    }
+
+    .skills-section {
+      display: flex;
+      flex-direction: column;
+      border: solid;
+      border-width: 3px;
+      border-radius: 15px;
+      font-size: 20px;
+      margin-top: 200px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      display: inline;
+      margin-right: 30px;
+    }
+
+    .skills-section {
+      margin-top: 200px;
+    }
+
+    .skills-list-container {
+      display: flex;
+      flex-direction: row;
+      column-gap: 5px;
+    }
+
+    img {
+      width: 120px;
+      border: medium;
+      border-radius: 20%;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <div class="header-section">
+    <div class="my-portfolio">
+      <p>My portfolio</p>
+    </div>
+
+    <div class="js-navElements">Welcome to my portfolio</div>
+
+    <button
+      style="padding: 1px; border-radius: 50px; cursor: pointer"
+      onclick="
+    showNavElements()"
+    >
+      <img style="width: 70px; border-radius: 35px" src="ThreeLinesIcon.png" />
+    </button>
+  </div>
+
+  <div class="skills-section">
+    <div>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="skills-list-container">
+      <ul>
+        <li><img src="thumbnails/html-5.png" /></li>
+
+        <li><img src="thumbnails/css-3.png" /></li>
+
+        <li><img src="thumbnails/java-script.png" /></li>
+
+        <li><img src="thumbnails/git.png" /></li>
+
+        <li><img src="thumbnails/github (1).png" /></li>
+
+        <li><img src="thumbnails/communicationLogo.png" /></li>
+        <li><img src ="thumbnails/microsoft-office-365-logo-png_seeklogo-168321.png"></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer style="margin-left: 550px">
+    <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
+  </footer>
+  <script src=" script.js"></script>
+</body>

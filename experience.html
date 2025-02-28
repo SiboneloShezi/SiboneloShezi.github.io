@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+  <title>Experience Page</title>
+
+  <style>
+    .header-section {
+      position: fixed; /* Makes the header stay at the top */
+      top: 0; /* Positions it at the top */
+      left: 0;
+      width: 100%; /* Ensures full width */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 25px;
+      border: solid;
+      border-radius: 15px;
+      background-color: grey;
+      height: 75px;
+    }
+
+    .experience-section {
+      display: flex;
+      flex-direction: column;
+      border: solid;
+      background-color: grey;
+      border-width: 3px;
+      border-radius: 15px;
+      font-size: 20px;
+      margin-top: 200px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      display: inline;
+      margin-right: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-section">
+    <div class="my-portfolio">
+      <p>My portfolio</p>
+    </div>
+
+    <div class="js-navElements">Welcome to my portfolio</div>
+
+    <button
+      style="padding: 1px; border-radius: 50px; cursor: pointer"
+      onclick="
+        showNavElements()"
+    >
+      <img style="width: 70px; border-radius: 35px" src="ThreeLinesIcon.png" />
+    </button>
+  </div>
+  <div class="experience-section">
+    <div>
+      <h2>Experience</h2>
+    </div>
+
+    <div>
+      <section id="experience">
+        <dl>
+          <dt>Clover: Yes Learner (Cheese Maker & Operator)</dt>
+          <dd>
+            03/2023 – 02/2024 <br />
+            Typical tasks that cheese makers carry out in their daily jobs
+            include ordering and purchasing milk, supervising the cheese making
+            process, performing quality tests, wrapping/packaging cheeses and
+            inspecting the aging process of cheese
+          </dd>
+          <br />
+          <dt>Webhelp: Customer Service Associate</dt>
+          <dd>
+            03/ 2022 –12/2022 <br />
+            Handling various customer service queries, including incoming calls,
+            refund requests, replacement requests, and non-order related
+            inquiries.
+          </dd>
+        </dl>
+      </section>
+    </div>
+  </div>
+
+  <footer style="margin-left: 550px">
+    <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>

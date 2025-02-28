@@ -1,0 +1,121 @@
+<!doctype html>
+<head>
+  <title>Education</title>
+  <style>
+    .header-section {
+      position: fixed; /* Makes the header stay at the top */
+      top: 0; /* Positions it at the top */
+      left: 0;
+      width: 100%; /* Ensures full width */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 25px;
+      border: solid;
+      border-radius: 15px;
+      background-color: grey;
+      height: 75px;
+    }
+
+    .project-section {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      border-width: 3px;
+      margin-right: 8px;
+      border-radius: 15px;
+      font-size: 20px;
+      margin-top: 50px;
+      margin-bottom: 200px;
+      align-items: center;
+      column-gap: 20px;
+    }
+
+    li {
+      display: inline;
+      margin-right: 30px;
+    }
+
+    .paragraph-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center; /* Centers horizontally */
+      align-items: center; /* Centers vertically */
+      margin: 0; /* Remove default margins */
+      margin-top: 200px;
+      font-size: 30px;
+      border: solid;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-section">
+    <div class="my-portfolio">
+      <p>My portfolio</p>
+    </div>
+
+    <div class="js-navElements">Welcome to my projects page.</div>
+
+    <button
+      style="padding: 1px; border-radius: 50px; cursor: pointer"
+      onclick="
+        showNavElements()"
+    >
+      <img style="width: 70px; border-radius: 35px" src="ThreeLinesIcon.png" />
+    </button>
+  </div>
+  <div class="paragraph-container">
+    <div>
+      <img style="width: 200px" src="thumbnails/Project_logo_eng.png" />
+    </div>
+    <div>
+      <p>
+        This is my project Page. Click on play to view video or the video title
+        to view the code for my work.
+      </p>
+    </div>
+  </div>
+
+  <ul>
+    <div class="project-section">
+      <div>
+        <h3>
+          <a href="https://github.com/SiboneloShezi/project1" target="_blank"
+            >My first website video</a
+          >
+        </h3>
+        <li>
+          <video width="50%" controls>
+            <source src="firstwebsite.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </li>
+      </div>
+
+      <div>
+        <li>
+          <a href="https://github.com/SiboneloShezi/project2" target="_blank"
+            >Project 2</a
+          >
+        </li>
+      </div>
+
+      <div>
+        <li>
+          <a href="https://github.com/SiboneloShezi/project3" target="_blank"
+            >Project 3</a
+          >
+        </li>
+      </div>
+    </div>
+  </ul>
+
+  <footer style="margin-left: 550px">
+    <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>

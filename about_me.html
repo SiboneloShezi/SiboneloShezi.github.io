@@ -1,0 +1,83 @@
+<!doctype html>
+<head>
+  <title>About Section</title>
+  <style>
+    .header-section {
+      position: fixed; /* Makes the header stay at the top */
+      top: 0; /* Positions it at the top */
+      left: 0;
+      width: 100%; /* Ensures full width */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 25px;
+      border: solid;
+      border-radius: 15px;
+      background-color: grey;
+      height: 75px;
+    }
+
+    .about-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 23px;
+      border-radius: 15px;
+      row-gap: 40px;
+      margin-top: 150px;
+      margin-bottom: 90px;
+    }
+
+    .about-section {
+      background-color: grey;
+    }
+
+    li {
+      display: inline;
+      margin-right: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-section">
+    <div class="my-portfolio">
+      <p>My portfolio</p>
+    </div>
+
+    <div class="js-navElements">Welcome to my portfolio</div>
+
+    <button
+      style="padding: 1px; border-radius: 50px; cursor: pointer"
+      onclick="
+    showNavElements()"
+    >
+      <img style="width: 70px; border-radius: 35px" src="ThreeLinesIcon.png" />
+    </button>
+  </div>
+
+  <div class="about-container">
+    <div style="border: solid; margin-right: 3px; border-radius: 15px">
+      <img src="thumbnails/Sibonel.jpg" />
+    </div>
+
+    <div class="about-section" style="border: solid">
+      <h2>About Me</h2>
+      <p>
+        Hi! I’m Sibonelo Shezi, a passionate developer with an interest in
+        sport, coding and chess. I love to create and innovate through
+        code.Ambitious graduate with a diploma in Operations Management, eager
+        to contribute developed knowledge in operations role. Skilled in data
+        capturing, quality control, efficiency and effectiveness, inventory
+        management, quality, cheese making and operator.
+      </p>
+    </div>
+  </div>
+
+  <footer style="justify-items: center; height: 75px">
+    <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
+  </footer>
+  <script src="script.js "></script>
+</body>
