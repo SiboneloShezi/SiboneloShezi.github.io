@@ -4,7 +4,7 @@ function showNavElements() {
     <nav>
         <ul>
         <li>
-            <a href="website.html"> Home</a>
+            <a href="index.html"> Home</a>
         </li>
         <li>
             <a href="about_me.html">About</a>
