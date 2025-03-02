@@ -5,6 +5,10 @@
 
   <title>About Section</title>
   <style>
+    body {
+      font-size: 2vw; /* Scales based on viewport width */
+    }
+
     .header-section {
       position: fixed; /* Makes the header stay at the top */
       top: 0; /* Positions it at the top */
@@ -63,14 +67,16 @@
   </div>
 
   <div class="about-container">
-    <div
-      style="
-        border: solid;
-        margin-right: 3px;
-        border-radius: 15px;
-      "
-    >
-      <img style="width: 100% ;height:100%; border-radius:15px; object-fit: cover;" src="thumbnails/Sibonel.jpg" />
+    <div style="border: solid; margin-right: 3px; border-radius: 15px">
+      <img
+        style="
+          width: 100%;
+          height: 100%;
+          border-radius: 15px;
+          object-fit: cover;
+        "
+        src="thumbnails/Sibonel.jpg"
+      />
     </div>
 
     <div class="about-section" style="border: solid">
@@ -86,7 +92,7 @@
     </div>
   </div>
 
-  <footer style="justify-items: center; ">
+  <footer style="justify-items: center">
     <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
   </footer>
   <script src="script.js "></script>
