@@ -6,10 +6,6 @@
     <title>My Website</title>
 
     <style>
-      body {
-        font-size: 2vw; /* Scales based on viewport width */
-      }
-
       .header-section {
         position: fixed; /* Makes the header stay at the top */
         top: 0; /* Positions it at the top */
@@ -34,17 +30,20 @@
         border: solid;
         border-width: 3px;
         border-radius: 8px;
-        margin-bottom: 40px;
+        margin-bottom: 100px;
         background-color: burlywood;
         font-size: 20px;
         height: 110px;
-
-        margin-top: 200px;
       }
 
       li {
         display: inline;
         margin-right: 30px;
+        text-decoration: none;
+      }
+
+      a {
+        text-decoration: none;
       }
     </style>
   </head>
@@ -68,28 +67,7 @@
       </button>
     </div>
 
-    <div class="personal-attributes"></div>
-
-    <div class="contact-section">
-      <div>
-        <section id="contact">
-          <h2>Contact</h2>
-        </section>
-      </div>
-      <div>
-        <p>
-          Connect with me on
-          <a
-            href="https://linkedin.com/in/sibonelo-shezi-6039801ba"
-            target="_blank"
-            >LinkedIn</a
-          >
-          or send me an email at
-          <a href="mailto: wizardshezi@gmail.com">wizardshezi@gmail.com</a>.
-        </p>
-      </div>
-    </div>
-
+    <div style="margin-top: 100px" class="personal-attributes"></div>
     <div>
       <a href="Sibonelo shezi2 updated tech2025.pdf" target="_blank">
         <img src="thumbnails/viewIcon.png" />
@@ -97,10 +75,6 @@
     </div>
 
     <p style="display: inline-block; margin-left: 10px">View my Cv</p>
-
-    <footer style="justify-items: center">
-      <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
-    </footer>
   </body>
 
   <script src="script.js"></script>

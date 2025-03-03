@@ -1,9 +1,14 @@
 <!doctype html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
 
-  <title>Education</title>
+  <title>About Section</title>
   <style>
+    body {
+      font-size: 2vw; /* Scales based on viewport width */
+    }
+
     .header-section {
       position: fixed; /* Makes the header stay at the top */
       top: 0; /* Positions it at the top */
@@ -13,37 +18,33 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      font-size: 25px;
+      font-size: calc(1rem + 0.5vw);
       border: solid;
       border-radius: 15px;
       background-color: grey;
       height: 75px;
     }
 
-    .education-section {
+    .about-container {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 3fr;
       align-items: center;
-      border-width: 3px;
-      margin-right: 8px;
-      border-radius: 15px;
+      justify-content: space-between;
       font-size: calc(1rem + 0.5vw);
-      margin-top: 200px;
-      margin-bottom: 200px;
-      justify-content: center;
-      column-gap: 30px;
+      border-radius: 15px;
+      row-gap: 40px;
+      margin-top: 150px;
+      margin-bottom: 90px;
+      object-fit: cover;
+    }
+
+    .about-section {
+      background-color: grey;
     }
 
     li {
       display: inline;
       margin-right: 30px;
-    }
-    .image-container {
-      background-color: white;
-    }
-
-    img {
-      width: 100%;
     }
 
     a {
@@ -63,52 +64,43 @@
     <button
       style="padding: 1px; border-radius: 50px; cursor: pointer"
       onclick="
-        showNavElements()"
+    showNavElements()"
     >
       <img style="width: 70px; border-radius: 35px" src="ThreeLinesIcon.png" />
     </button>
   </div>
 
-  <div class="education-section">
-    <div class="image-container">
-      <img src="thumbnails/educationSlogan.jpg" />
+  <div class="contact-section">
+    <div>
+      <section id="contact">
+        <h2>Contact</h2>
+      </section>
     </div>
 
-    <div
-      style="
-        border: solid;
-        background-color: grey;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-      "
-    >
-      <h2>Education</h2>
-      <dl>
-        <dt>
-          Durban University of Technology: Advance Diploma in Operations
-          Management
-        </dt>
-        <dd>
-          02/2021 – 05/2022 <br />
-          Completed
-        </dd>
-        <br />
-        <dt>
-          Durban University of Technology: Diploma in Operations Management
-        </dt>
-        <dd>
-          02/ 2018 –12/2020 <br />
-          completed
-        </dd>
-      </dl>
+    <form action="submit.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div>
+      <a href="https://linkedin.com/in/sibonelo-shezi-6039801ba" target="_blank"
+        >LinkedIn</a
+      >
+      or send me an email at
+      <a href="mailto: wizardshezi@gmail.com">wizardshezi@gmail.com</a>.
     </div>
   </div>
 
   <footer style="justify-items: center">
     <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="script.js "></script>
 </body>

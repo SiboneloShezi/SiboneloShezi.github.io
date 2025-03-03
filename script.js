@@ -23,7 +23,7 @@ function showNavElements() {
             <a href="experience.html">Experience</a>
         </li>
         <li>
-            <a href="#contact">Contact</a>
+            <a href="contact.html">Contact</a>
         </li>
         </ul>
     </nav>
