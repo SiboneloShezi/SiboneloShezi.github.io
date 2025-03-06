@@ -11,7 +11,7 @@ if (paragraphElement) {
         </span>
       </p>
     `;
-  }, 1000);
+  }, 2000);
 }
 
 if (paragraphElement) {
