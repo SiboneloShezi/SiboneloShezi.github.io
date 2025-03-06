@@ -1,3 +1,29 @@
+const paragraphElement = document.querySelector(".js-slogan-paragraphs");
+
+const str = "Elevating potential, one project at a time"
+
+if (paragraphElement) {
+  setInterval(() => {
+    paragraphElement.innerHTML = `
+      <p>
+        <span style='font-family: "Courier New", Courier, monospace'>
+          Elevating potential, one project at a time
+        </span>
+      </p>
+    `;
+  }, 1000);
+}
+
+if (paragraphElement) {
+  setInterval(() => {
+    paragraphElement.innerHTML = `<p>
+    <span style='font-family: "Courier New", Courier, monospace ;color : red'>
+      Elevating potential, one project at a time
+    </span>
+  </p>
+       `;
+  }, 4000);
+}
 let elementsPresent = false; // Global variable to persist state
 
 function showNavElements() {
