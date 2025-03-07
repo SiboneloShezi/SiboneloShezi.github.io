@@ -1,13 +1,12 @@
 const paragraphElement = document.querySelector(".js-slogan-paragraphs ");
 const aboutMeParagraph = document.querySelector(".js-about-me");
 const projectParagraph = document.querySelector(".js-project");
+const skillsElements = document.querySelector(".js-skills")
 
 projectPage();
 
-function projectPage() {
-  const str = [
-    "This is my project Page. Click on play to view video or the video title to view the code for my work.",
-  ];
+function projectPage(param) {
+  
 
   let i = 0;
   let j = 0;
@@ -15,10 +14,10 @@ function projectPage() {
 
   let paragraphLetters;
 
-  if (projectParagraph) {
+  if (param) {
     paragraphLetters = setInterval(() => {
       result += str[i][j];
-      projectParagraph.innerHTML = `
+      param.innerHTML = `
       <p>
       <span
       style="
