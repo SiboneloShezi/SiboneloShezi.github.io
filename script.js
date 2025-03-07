@@ -22,9 +22,10 @@ function aboutMe() {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color:white;
       "
     >
-      <h2><strong>About Me</strong></h2>
+      <h2 style = "color : white"><strong>About Me</strong></h2>
       ${result}
     </span>
   </p>
