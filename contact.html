@@ -1,126 +1,133 @@
 <!doctype html>
-<head>
-  <meta charset="UTF-8" />
+<html>
+  <head>
+    <meta charset="UTF-8" />
 
-  <title>About Section</title>
-  <style>
-    body {
-      font-size: 2vw; /* Scales based on viewport width */
-    }
+    <title>About Section</title>
+    <style>
+      body {
+        font-size: 2vw; /* Scales based on viewport width */
+      }
 
-    .header-section {
-      position: fixed; /* Makes the header stay at the top */
-      top: 0; /* Positions it at the top */
-      left: 0;
-      width: 100%; /* Ensures full width */
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      font-size: calc(1rem + 0.5vw);
-      border: solid;
-      border-radius: 15px;
-      background-color: grey;
-      height: 75px;
-    }
+      .header-section {
+        position: fixed; /* Makes the header stay at the top */
+        top: 0; /* Positions it at the top */
+        left: 0;
+        width: 100%; /* Ensures full width */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: calc(1rem + 0.5vw);
+        border: solid;
+        border-radius: 15px;
+        background-color: grey;
+        height: 75px;
+      }
 
-    .about-container {
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      align-items: center;
-      justify-content: space-between;
-      font-size: calc(1rem + 0.5vw);
-      border-radius: 15px;
-      row-gap: 40px;
-      margin-top: 150px;
-      margin-bottom: 90px;
-      object-fit: cover;
-    }
+      .about-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        justify-content: space-between;
+        font-size: calc(1rem + 0.5vw);
+        border-radius: 15px;
+        row-gap: 40px;
+        margin-top: 150px;
+        margin-bottom: 90px;
+        object-fit: cover;
+      }
 
-    .about-section {
-      background-color: grey;
-    }
+      .about-section {
+        background-color: grey;
+      }
 
-    li {
-      display: inline;
-      margin-right: 30px;
-    }
+      li {
+        display: inline;
+        margin-right: 30px;
+      }
 
-    a {
-      text-decoration: none;
-    }
+      a {
+        text-decoration: none;
+      }
 
-    form {
-      display: block;
-      width: 100%; /* Optional: Makes it full width */
-      max-width: 500px; /* Optional: Limits form width */
-      margin: auto; /* Centers it */
-      padding: 20px;
-      border: 1px solid #ccc;
-      background: #f9f9f9;
-    }
+      form {
+        display: block;
+        width: 100%; /* Optional: Makes it full width */
+        max-width: 500px; /* Optional: Limits form width */
+        margin: auto; /* Centers it */
+        padding: 20px;
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+      }
 
-    label {
-      display: block;
-      max-width: 500px;
-    }
+      label {
+        display: block;
+        max-width: 500px;
+      }
 
-    button {
-      display: block;
-    }
-  </style>
-</head>
+      button {
+        display: block;
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="header-section">
-    <div class="my-portfolio">
-      <p>My portfolio</p>
-    </div>
+  <body>
+    <div class="header-section">
+      <div class="my-portfolio">
+        <p>My portfolio</p>
+      </div>
 
-    <div class="js-navElements">Welcome to my portfolio</div>
+      <div class="js-navElements">Welcome to my portfolio</div>
 
-    <button
-      style="padding: 1px; border-radius: 50px; cursor: pointer"
-      onclick="
+      <button
+        style="padding: 1px; border-radius: 50px; cursor: pointer"
+        onclick="
     showNavElements()"
-    >
-      <img style="width: 70px; border-radius: 35px" src="ThreeLinesIcon.png" />
-    </button>
-  </div>
-
-  <div class="contact-section">
-    <div>
-      <section id="contact">
-        <h2>Contact</h2>
-      </section>
-    </div>
-
-    <div class="form-container">
-      <form action="submit.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-
-    <div>
-      <a href="https://linkedin.com/in/sibonelo-shezi-6039801ba" target="_blank"
-        >LinkedIn</a
       >
-      or send me an email at
-      <a href="mailto: wizardshezi@gmail.com">wizardshezi@gmail.com</a>.
+        <img
+          style="width: 70px; border-radius: 35px"
+          src="ThreeLinesIcon.png"
+        />
+      </button>
     </div>
-  </div>
 
-  <footer style="justify-items: center">
-    <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
-  </footer>
-  <script src="script.js "></script>
-</body>
+    <div class="contact-section">
+      <div>
+        <section id="contact">
+          <h2>Contact</h2>
+        </section>
+      </div>
+
+      <div class="form-container">
+        <form action="submit.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div>
+        <a
+          href="https://linkedin.com/in/sibonelo-shezi-6039801ba"
+          target="_blank"
+          >LinkedIn</a
+        >
+        or send me an email at
+        <a href="mailto: wizardshezi@gmail.com">wizardshezi@gmail.com</a>.
+      </div>
+    </div>
+
+    <footer style="justify-items: center">
+      <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
+    </footer>
+    <script src="script.js "></script>
+  </body>
+</html>
