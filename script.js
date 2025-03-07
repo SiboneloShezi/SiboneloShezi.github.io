@@ -1,5 +1,47 @@
 const paragraphElement = document.querySelector(".js-slogan-paragraphs ");
 const aboutMeParagraph = document.querySelector(".js-about-me");
+const projectParagraph = document.querySelector(".js-project");
+
+projectPage();
+
+function projectPage() {
+  const str = [
+    "This is my project Page. Click on play to view video or the video title to view the code for my work.",
+  ];
+
+  let i = 0;
+  let j = 0;
+  let result = "";
+
+  let paragraphLetters;
+
+  if (projectParagraph) {
+    paragraphLetters = setInterval(() => {
+      result += str[i][j];
+      projectParagraph.innerHTML = `
+      <p>
+      <span
+      style="
+        font-family: &quot;Courier New&quot;, Courier, monospace;
+        display: flex;
+        flex-direction: column;
+      "
+    >
+    <strong><h2>Featured Projects</h2></strong>
+
+      ${result}
+    </span>
+  </p>
+    `;
+
+      j++;
+
+      if (str[i].length === result.length) {
+        clearInterval(paragraphLetters);
+      }
+    }, 75);
+  }
+}
 
 function aboutMe() {
   const str = [
@@ -34,7 +76,7 @@ function aboutMe() {
       j++;
 
       if (str[i].length === result.length) {
-        clearInterval(paragraphLetters)
+        clearInterval(paragraphLetters);
       }
     }, 75);
   }
