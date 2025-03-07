@@ -1,15 +1,57 @@
-const paragraphElement = document.querySelector(".js-slogan-paragraphs");
+const paragraphElement = document.querySelector(".js-slogan-paragraphs ");
+const aboutMeParagraph = document.querySelector(".js-about-me");
 
-const str = ["Elevating potential, one project at a time"];
+function aboutMe() {
+  const str = [
+    "Hi! I’m Sibonelo Shezi, a passionate front-end developer with an interest in sport, coding and chess. I love to create and innovate through code. Ambitious graduate with a diploma in Operations Management, eager to contribute developed knowledge in operations role. Skilled in data capturing, quality control, efficiency and effectiveness, inventory management, quality, cheese making and operator.",
+  ];
 
-let i = 0;
-let j = 0;
-let result = "";
+  let i = 0;
+  let j = 0;
+  let result = "";
 
-if (paragraphElement) {
-  setInterval(() => {
-    result += str[i][j];
-    paragraphElement.innerHTML = `
+  let paragraphLetters;
+
+  if (aboutMeParagraph) {
+    paragraphLetters = setInterval(() => {
+      result += str[i][j];
+      aboutMeParagraph.innerHTML = `
+      <span
+      style="
+        font-family: &quot;Courier New&quot;, Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <h2><strong>About Me</strong></h2>
+      ${result}
+    </span>
+  </p>
+    `;
+
+      j++;
+
+      if (str[i].length === result.length) {
+        clearInterval(paragraphLetters)
+      }
+    }, 75);
+  }
+}
+
+aboutMe();
+
+function homeFeature() {
+  const str = ["Elevating potential, one project at a time"];
+
+  let i = 0;
+  let j = 0;
+  let result = "";
+
+  if (paragraphElement) {
+    setInterval(() => {
+      result += str[i][j];
+      paragraphElement.innerHTML = `
       <p>
         <span style='font-family: "Courier New", Courier, monospace'>
           ${result}
@@ -17,14 +59,17 @@ if (paragraphElement) {
       </p>
     `;
 
-    j++;
+      j++;
 
-    if (str[i].length === result.length) {
-      result = "";
-      j = 0;
-    }
-  }, 205);
+      if (str[i].length === result.length) {
+        result = "";
+        j = 0;
+      }
+    }, 205);
+  }
 }
+
+homeFeature();
 
 let elementsPresent = false; // Global variable to persist state
 
