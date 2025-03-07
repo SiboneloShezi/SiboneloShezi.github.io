@@ -54,6 +54,17 @@ function homeFeature() {
       result += str[i][j];
       paragraphElement.innerHTML = `
       <p>
+      <h1>
+        <span
+        style="
+            font-family:
+            Courier New,
+            Courier,
+            monospace;
+        "
+        >Welcome to My Portfolio</span
+        >
+  </h1>
         <span style='font-family: "Courier New", Courier, monospace'>
           ${result}
         </span>
