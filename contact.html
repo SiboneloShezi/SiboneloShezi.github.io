@@ -2,132 +2,206 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Contact Section</title>
-    <style>
-      body {
-        font-size: 2vw; /* Scales based on viewport width */
-      }
+    <title>Experience Section</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-      .header-section {
-        position: fixed; /* Makes the header stay at the top */
-        top: 0; /* Positions it at the top */
-        left: 0;
-        width: 100%; /* Ensures full width */
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        font-size: calc(1rem + 0.5vw);
-        border: solid;
-        border-radius: 15px;
-        background-color: grey;
-        height: 75px;
-      }
-
-      .about-container {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        align-items: center;
-        justify-content: space-between;
-        font-size: calc(1rem + 0.5vw);
-        border-radius: 15px;
-        row-gap: 40px;
-        margin-top: 150px;
-        margin-bottom: 90px;
-        object-fit: cover;
-      }
-
-      .about-section {
-        background-color: grey;
-      }
-
-      li {
-        display: inline;
-        margin-right: 30px;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      form {
-        display: block;
-        width: 100%; /* Optional: Makes it full width */
-        max-width: 500px; /* Optional: Limits form width */
-        margin: auto; /* Centers it */
-        padding: 20px;
-        border: 1px solid #ccc;
-        background: #f9f9f9;
-      }
-
-      label {
-        display: block;
-        max-width: 500px;
-      }
-
-      button {
-        display: block;
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
   </head>
 
+  <style>
+    .header-section {
+      position: fixed; /* Makes the header stay at the top */
+      top: 0; /* Positions it at the top */
+      left: 0;
+      width: 100%; /* Ensures full width */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: calc(1rem + 0.5vw);
+      border: 1px solid;
+      background-color: lightgrey;
+      height: 60px;
+    }
+
+    li {
+      display: inline;
+      margin-right: 30px;
+      font-size: medium;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    body {
+      font-family: "Roboto";
+      font-size: 22px;
+    }
+
+    .slogan-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .coding-image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 80px;
+      margin-top: 80px
+    }
+
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .experience-container {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      font-family: "Courier New", Courier, monospace;
+      margin-bottom: 50px;
+    }
+
+    form {
+      display: block;
+      width: 100%; /* Optional: Makes it full width */
+      max-width: 500px; /* Optional: Limits form width */
+      margin: auto; /* Centers it */
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+
+    label {
+      display: block;
+      max-width: 500px;
+    }
+
+    button {
+      display: block;
+    }
+  </style>
+
   <body>
-    <div class="header-section">
-      <div class="my-portfolio">
-        <p>My portfolio</p>
-      </div>
-
-      <div class="js-navElements">Welcome to my portfolio</div>
-
-      <button
-        style="padding: 1px; border-radius: 50px; cursor: pointer"
-        onclick="
-    showNavElements()"
+    <div class="container-fluid">
+      <div
+        class="row align-items-center justify-content-center"
+        style="
+          margin-bottom: 30px;
+          background-color: lightgray;
+          padding: 5px;
+          border: 2px solid;
+        "
       >
-        <img
-          style="width: 70px; border-radius: 35px"
-          src="ThreeLinesIcon.png"
-        />
-      </button>
+        <div class="col-md-1">
+          <button
+            class="js-button"
+            class="manu-button-element"
+            style="padding: 1px; cursor: pointer; border: none"
+            onclick="
+          showNavElements()"
+          >
+            <img style="width: 40px" src="ThreeLinesIcon.png" />
+          </button>
+        </div>
+
+        <div class="col-md-2">
+          <h4>My portfolio</h4>
+        </div>
+
+        <div class="col-md-9"><div class="js-navElements"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="slogan-container">
+          <div class="col-md-12"></div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center align-items-center">
+        <div class="coding-image-container">
+          <div class="col"><h1>Lets get in touch</h1></div>
+          <div class="col-md-3">
+            <img width=" 100%" src="thumbnails/contactImage.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center justify-content-center">
+        <div class="contact-container">
+          <div class="col-md-12">
+            <form action="submit.php" method="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <div class="col-md-2">
+            <a href="Sibonelo shezi2 updated tech2025.pdf" target="_blank">
+              <button style="width: 100%">VIEW MY CV</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <footer style="justify-items: center; font-size: 18px">
+            <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
     </div>
 
-    <div class="contact-section">
-      <div>
-        <section id="contact">
-          <h2>Contact</h2>
-        </section>
-      </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
 
-      <div class="form-container">
-        <form action="submit.php" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-
-      <div>
-        <a
-          href="https://linkedin.com/in/sibonelo-shezi-6039801ba"
-          target="_blank"
-          >LinkedIn</a
-        >
-        or send me an email at
-        <a href="mailto: wizardshezi@gmail.com">wizardshezi@gmail.com</a>.
-      </div>
-    </div>
-
-    <footer style="justify-items: center">
-      <p>&copy; 2025 Sibonelo Shezi. All rights reserved.</p>
-    </footer>
-    <script src="script.js "></script>
+    <script src="script.js"></script>
   </body>
 </html>
